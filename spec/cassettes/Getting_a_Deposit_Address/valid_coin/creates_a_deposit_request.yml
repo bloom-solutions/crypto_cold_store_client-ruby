@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[CRYPTO_COLD_STORE_HOST]/api/v1/deposit_detail?code=TEST-ID&coin=btc"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2beace5cfd9dfdd49eba500e388d3837"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - d4592d41-554e-4eb0-b7d2-6a55c782060c
+      X-Runtime:
+      - '0.018270'
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Fri, 28 Sep 2018 07:33:09 GMT
+      Content-Length:
+      - '60'
+    body:
+      encoding: UTF-8
+      string: '{"address":"3B5uohpjXxX4fBhZX2bxKiWJ1oFAi7SQDX","min":0.001}'
+    http_version: 
+  recorded_at: Fri, 28 Sep 2018 07:33:09 GMT
+recorded_with: VCR 4.0.0
