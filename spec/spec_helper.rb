@@ -1,4 +1,15 @@
 require "bundler/setup"
+
+require "dotenv"
+
+ENV_FILES = %w[.env.test.local .env]
+Dotenv.load(*ENV_FILES)
+
+require "active_support/core_ext/hash/indifferent_access"
+require "active_support/json"
+require "pathname"
+require "vcr"
+require "pry-byebug"
 require "crypto_cold_store_client"
 
 RSpec.configure do |config|
@@ -10,5 +21,17 @@ RSpec.configure do |config|
 
   config.expect_with :rspec do |c|
     c.syntax = :expect
+  end
+end
+
+VCR.configure do |c|
+  FILTERED_VARIABLES = %w[CRYPTO_COLD_STORE_HOST]
+
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+
+  FILTERED_VARIABLES.each do |var|
+    c.filter_sensitive_data("[#{var}]") { ENV[var] }
   end
 end
