@@ -31,12 +31,17 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "activesupport", ">= 5.0.0"
   spec.add_dependency "api_client_base", "~> 1.4"
-  spec.add_dependency "typhoeus", "~> 1.1"
-  spec.add_dependency "gem_config", "~> 0.3.1"
+  spec.add_dependency "gem_config", "0.3.1"
+  spec.add_dependency "typhoeus", "~> 1.3"
+  spec.add_dependency "virtus", "~> 1.0"
+  spec.add_dependency "dry-validation", "0.12.2"
 
   spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "vcr", "~> 3.0"
+  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_development_dependency "rspec", "~> 3.8"
+  spec.add_development_dependency "vcr", "~> 4.0"
+  spec.add_development_dependency "webmock", "~> 3.4"
+  spec.add_development_dependency "dotenv", "~> 2.5"
 end
