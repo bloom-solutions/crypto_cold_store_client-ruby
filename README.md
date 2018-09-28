@@ -18,6 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
+Configure in an initializer:
+
+```ruby
+CryptoColdStoreClient.configure do |c|
+  c.host = "https://your-crypto-cold-store.installation"
+end
+```
+
 See `spec/acceptance` for examples and usage
 
 ## Development
