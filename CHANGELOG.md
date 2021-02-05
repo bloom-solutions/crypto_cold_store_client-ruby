@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.0.0] - 2020-02-05
+## [1.1.0] - 2020-02-05
 ### Added
 - Loosen dry-validation constraint to be >= 0.12.2
 - Loosen `gem_config` constraint to `~> 0.3.1`
