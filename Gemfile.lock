@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    crypto_cold_store_client (0.1.0)
+    crypto_cold_store_client (1.0.0)
       activesupport (>= 5.0.0)
       api_client_base (~> 1.4)
       dry-validation (>= 0.12.2, < 1.0)
