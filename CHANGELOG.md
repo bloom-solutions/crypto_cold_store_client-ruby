@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.2.0] - 2021-06-15
 ### Added
 - Update dry-validation to 1.x
 - Loosen Virtus to allow 2.x as well as 1.x
