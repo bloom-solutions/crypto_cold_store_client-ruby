@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 2022-04-06
+### Added
+- dry-validation 0.13.x compability, but do not check args
+
 ## [1.2.0] - 2021-06-15
 ### Added
 - Update dry-validation to 1.x
