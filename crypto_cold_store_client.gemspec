@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "gem_config", "~> 0.3.1"
   spec.add_dependency "typhoeus", "~> 1.3"
   spec.add_dependency "virtus", ">= 1.0", "< 3"
-  spec.add_dependency "dry-validation", "~> 1.0", "< 2"
+  spec.add_dependency "dry-validation", ">= 0.13", "< 2"
 
   spec.add_development_dependency "bundler", "~> 2.2"
   spec.add_development_dependency "rake", "~> 12.3"
@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr", "~> 4.0"
   spec.add_development_dependency "webmock", "~> 3.4"
   spec.add_development_dependency "dotenv", "~> 2.5"
+  spec.add_development_dependency "appraisal", "~> 2.4"
 end
