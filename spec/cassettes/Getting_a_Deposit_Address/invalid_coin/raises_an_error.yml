@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "[CRYPTO_COLD_STORE_HOST]/api/v1/deposit_detail?code=TEST-ID&coin=xlm"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"44136fa355b3678a1146ad16f7e8649e"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 7515882f-6e6d-4dd5-b0ac-4f38206677a2
+      X-Runtime:
+      - '1.114146'
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Wed, 06 Apr 2022 07:37:35 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: "{}"
+    http_version:
+  recorded_at: Wed, 06 Apr 2022 07:37:35 GMT
+recorded_with: VCR 4.0.0

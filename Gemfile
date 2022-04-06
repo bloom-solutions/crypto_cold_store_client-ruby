@@ -6,3 +6,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 gem "pry-byebug"
+
+gem "appraisal", github: "thoughtbot/appraisal", ref: "97079f000840338edde73ded08ed6687e0b5223a"
