@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/thoughtbot/appraisal
+  revision: 97079f000840338edde73ded08ed6687e0b5223a
+  ref: 97079f000840338edde73ded08ed6687e0b5223a
+  specs:
+    appraisal (2.4.1)
+      bundler
+      rake
+      thor (>= 0.14.0)
+
 PATH
   remote: ..
   specs:
@@ -23,10 +33,6 @@ GEM
       activesupport (>= 3.0)
       gem_config (>= 0.3.1)
       virtus (>= 1.0)
-    appraisal (2.4.1)
-      bundler
-      rake
-      thor (>= 0.14.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -128,7 +134,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  appraisal (~> 2.4)
+  appraisal!
   bundler (~> 2.2)
   crypto_cold_store_client!
   dotenv (~> 2.5)
